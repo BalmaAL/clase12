@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Acreditación y Arancel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>     
+		<link href="style.css" rel="stylesheet"/>
+	</head>
+    <body>
+        <nav>
+            <div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" fill="#e33e1b">
+                      <path d="M21.34,59.41V39.73h2c4.67,0,7.26,3.07,7.26,6.4v9l3,3.2V18c0-3.32,2-5.41,4.67-5.41s4.55,2.09,4.55,5.41V49.45h2.83V11.69c0-3.2,1.85-5.29,4.68-5.29,2.46,0,4.42,2.09,4.42,5.29V49.45H57.5V16.24C57.5,13,59.59,11,62.3,11c2.46,0,4.43,2.09,4.43,5.29L66.6,49.45h2.83V21.4c0-3.32,2.22-5.29,4.43-5.29a4.94,4.94,0,0,1,4.8,5.29l-.25,41.45C78.29,83.52,67.47,93.6,50.74,93.6,32.9,93.6,21.34,80.44,21.34,59.41Z" />
+					</svg>												
+                    Not Allowed
+                </span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </nav>
+        
+        <header>
+            <img src="encabezado.png"/>
+            <h3>DISEÑO EN CHILE</h3>
+            <h1>Acreditación y Arancel</h1>
+            <h2>Una correlación débil en el mercado de la educación superior</h2>
+            <address>Por <a href="#">Balma Ayala Lara</a>, <a href="#">Gastón Meneses</a> y <a href="#">Felipe Cortez</a></address>
+            <time>Publicado el 2 de junio, 2026 04:00 p.m. GMT-2</time>
+        </header>
+
+        <main id="contenedor">
+
+            <p>En Chile, <a href="https://bcn.cl/2ewsw" target="_blank">la ley</a> obliga a acreditarse a las instituciones de educación superior. Carreras, entre las que se cuentan las de Diseño, quedan exentas de esta obligatoriedad.</p>
+
+            <p>Cada acreditación obligatoria e institucional evalúa el cumplimiento del proyecto corporativo y verifica la existencia de mecanismos eficaces de autorregulación y de aseguramiento de la calidad. A partir del resultado de cada evaluación, la <a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx">Comisión Nacional de Acreditación (<small>CNA</small>)</a> determina el plazo para la próxima, con tres niveles de cumplimiento:</p>
+
+            <ul>
+                <li><em>Acreditada en nivel de excelencia:</em> de 6 a 7 años.</li>
+                <li><em>Acreditada en nivel avanzado:</em> de 4 a 5 años.</li>
+                <li><em>Acreditada en nivel básico:</em> 3 años.</li>
+            </ul>
+
+            <p>Por acotar, podemos <em>revisar las acreditaciones de las universidades</em>, que son las instituciones responsables de ofrecer el 35,82% de las vacantes totales de la educación superior para carreras de Diseño en 2026 (2.717 cupos del total de 7.586, según registros del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior, <small>SIES</small></a>).</p>
+
+            <p>Revisando estas acreditaciones, podemos encontrar plazos de acreditación que oscilan entre los 3 y los 7 años.
+            </p>
+
+            <h4>¿Existe una correlación directa entre el nivel de acreditación de una universidad y el costo de su arancel anual?</h4>
+
+            <p>En el siguiente gráfico podemos ver la respuesta.</p>
+
+            <figure>
+                <canvas id="dispersion"></canvas>
+                <figcaption>
+                    Años de acreditación institucional y arancel del programa. Datos 2026, obtenidos del
+                    <a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>, de la Subsecretaría de Educación Superior y de la <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">Comisión Nacional de Acreditación</a>.
+                </figcaption>
+            </figure>
+
+            <p>Para visualizar patrones en estructuras complejas, los <a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html" target="_blank">diagramas de distribución</a> resultan idóneos. Al proyectar una colección de puntos mediante coordenadas cartesianas, el cruce de las variables en los ejes horizontal y vertical permite detectar la presencia y fuerza de una correlación entre ambas.</p>
+
+            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación de débil y los valores atípicos son varios.</p>
+
+            <h4>¿Existe una brecha real en los costos de arancel entre 		las universidades públicas y las privadas en las 		carreras de Diseño?</h4>
+		
+	<p>Para profundizar en los hallazgos del análisis de distribución general, este segundo análisis desglosa la muestra separando a las instituciones en Universidades Públicas (Estatales) frente a Universidades Privadas (No Estatales y Privadas CRUCH). El objetivo es identificar si el carácter público de una institución garantiza un arancel más accesible en relación con sus niveles de certificación.</p>
+
+<p>Al agrupar y promediar los costos de los programas por sus respectivos años de acreditación institucional, se observan dinámicas contrastantes en el mercado de la educación superior en Chile:</p>
+
+<ul>
+      <strong>Instituciones Estatales:</strong> Mantienen una escala de aranceles más estrecha y predecible, donde los costos aumentan a mayor acreditación, promediando un máximo de $5.880.025 en el nivel de excelencia (7 años).
+</ul>
+
+<ul>
+      <strong>Instituciones Privadas:</strong> Muestran un comportamiento más agresivo, registrando aranceles significativamente más altos que las públicas, rozando los $7.500.000 promedio en el tramo de 7 años de acreditación.
+</ul>
+
+			<figure>
+                <canvas id="otro"></canvas>
+                <figcaption>
+                    Comparativa de aranceles anuales promedio entre universidades públicas y privadas según tramos de acreditación institucional. Datos 2026, obtenidos del
+                    <a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>, de la Subsecretaría de Educación Superior y de la <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">Comisión Nacional de Acreditación</a>.
+                </figcaption>
+            </figure>
+
+
+
+            <p><em>Tipo de gráfico</em>. Para cruzar y contrastar visualmente estos dos grupos, se ha determinado que un <a href="https://datavizcatalogue.com/ES/metodos/graficos_de_barras.html" target="_blank">gráfico de barras</a> es la opción más pertinente siguiendo los lineamientos del <em>Catálogo de Visualización de Datos</em>. Este método facilita la comparación directa de valores cuantitativos (aranceles promedio) pertenecientes a dos categorías distintas dentro de una misma variable discreta (años de acreditación), permitiendo al usuario escanear magnitudes y diferencias de altura de forma inmediata.</p>
+
+            <p>La visualización permite concluir que, a igualdad de años de acreditación institucional, las universidades privadas promedian costos anuales considerablemente mayores que las estatales (con la única excepción del tramo básico de 4 años). Esto demuestra una consistencia con el gráfico de dispersión previo: el valor del arancel en el sector privado chileno no está determinado exclusivamente por la calidad institucional certificada por la CNA, sino por factores de libre mercado y prestigio percibido.</p>
+
+            
+            <h5>Fuentes</h5>
+		<p>Análisis y visualización desarrollados por <strong>Balma Ayala Lara</strong>.<br/> 
+Datos reales 2026 obtenidos de: <br/> 
+Servicio de Información de Educación Superior (<a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">SIES</a>) <br/> 
+Comisión Nacional de Acreditación (<a href="https://www.cnachile.cl/" target="_blank">CNA Chile</a>)
+		 </p>
+		
+       </main>
+
+
+        <footer>
+            <div>
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank"
+                    >Inspirado en Reuters</a
+                >
+                <a href="https://github.com/profesorfaco/troncal">Diseño y visualización de información</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="script.js"></script>
+
+      
+    </body>
+</html>
